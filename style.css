@@ -1,0 +1,29 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.earth {
+    width: 100px;
+    height: 100px;
+    background-image: url('terra.jpg'); /* Adicione uma imagem da Terra aqui */
+    background-size: cover;
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
